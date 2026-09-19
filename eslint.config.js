@@ -39,5 +39,11 @@ export default [
     languageOptions: {
       parser: tseslint.parser,
     },
+    rules: {
+      // Keep source formatting consistent without requiring a separate formatter.
+      semi: ["error", "always"],
+      quotes: ["error", "single", { avoidEscape: true }],
+      "comma-dangle": ["error", "always-multiline"],
+    },
   },
 ];
